@@ -41,6 +41,14 @@ class BlocPlayground extends StatelessWidget {
             },
           ),
           const Divider(),
+          ListTile(
+            title: const Text('Todo Page'),
+            trailing: const Icon(Icons.arrow_forward),
+            onTap: () {
+              context.goNamed(AppRouter.crud.name);
+            },
+          ),
+          const Divider(),
         ],
       ),
     );
